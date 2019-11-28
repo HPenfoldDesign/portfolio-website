@@ -1,0 +1,298 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.header-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100vh;
+    width: 100%;
+}
+
+.top-banner-and-nav {
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: 66px;
+    background: #292929;
+
+    @include respond(mob-large) {
+        position: fixed;
+        z-index: 15;
+    }
+
+    @include respond(tab-port) {
+        position: fixed;
+        z-index: 15;
+    }
+
+    @include respond(half-break) {
+        width: 80px;
+        height: 190px;
+        display: inline;
+        border-radius: 0 0 10px 0;
+    }
+
+    @include respond(tab-lan) {
+        width: 115px;
+        height: 200px;
+        display: inline;
+        border-radius: 0 0 10px 0;
+    }
+
+    @include respond(desktop) {
+        width: 115px;
+        height: 200px;
+        display: inline;
+        border-radius: 0 0 10px 0;
+    }
+
+    .header-logo {
+        width: 55px;
+        height: 55px;
+        padding: 4px 0 0 8px;
+
+        @include respond(half-break) {
+            max-width: 85px;
+            max-height: 85px;
+            padding: 15px 0 0 15px;
+        }
+
+        @include respond(tab-lan) {
+            width: 85px;
+            height: 85px;
+            padding: 15px 0 0 13px;
+        }
+
+        @include respond(desktop) {
+            width: 85px;
+            height: 85px;
+            padding: 15px 0 0 13px;
+        }
+    }
+}
+
+.ext-banner-menu {
+    display: none;
+    position: absolute;
+    top: 60px; 
+    width: 100%;
+    height: 110px;
+    background-color: #292929;
+    color: #fff;
+    padding: 10px 10px 0px 10px;
+    z-index: 10;
+    text-transform: uppercase;
+    line-height: 2;
+    font-weight: 500;
+
+    a {
+        text-decoration: none;
+
+        &:visited {
+            color: #fff;
+        }
+
+        &:hover {
+            color: grey;
+        }
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    i {
+        padding-left: 5px;
+        color: rgb(87, 87, 87);
+    }
+
+    span img {
+        position: absolute;
+        width: 23px;
+        height: 23px;
+        right: 38px; 
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+
+    @include respond(mob-large) {
+        position: fixed;
+        z-index: 15;
+    }
+
+    @include respond(tab-port) {
+        position: fixed;
+        z-index: 15;
+    }
+
+    @include respond(half-break) {
+        left: 80px;
+        top: 0;
+        height: 180px;
+        width: 30vw;
+        border-radius: 0 0 10px 0;
+        padding-left: 15px;
+    }
+
+    @include respond(tab-lan) {
+        left: 115px;
+        top: 0;
+        height: 190px;
+        width: 30vw;
+        border-radius: 0 0 10px 0;
+        padding-left: 15px;
+    }
+
+    @include respond(desktop) {
+        left: 115px;
+        top: 0;
+        height: 190px;
+        width: 20vw;
+        border-radius: 0 0 10px 0;
+        padding-left: 30px;
+    }
+}
+
+
+.intro {
+    display: grid;
+    grid-template-columns: 2fr;
+
+    @include respond(half-break) {
+        height: 85vh;
+    }
+
+    @include respond(tab-lan) {
+        height: 85vh;
+    }
+
+    @include respond(desktop) {
+        height: 85vh;
+    }
+
+    .green-box {
+        display: grid;
+        justify-self: end;
+        background: rgba(5, 255, 0, 0.12);
+        height: calc(100vh - 66px);
+        width: 50%;
+
+        @include respond(half-break) {
+            position: absolute;
+            height: 100vh;
+            top: 0;
+            right: 0;
+        }
+
+        @include respond(tab-lan) {
+            position: absolute;
+            height: 100vh;
+            top: 0;
+            right: 0;
+            width: 45%;
+        }
+
+        @include respond(desktop) {
+            position: absolute;
+            height: 100vh;
+            top: 0;
+            right: 0;
+            width: 40%;
+        }
+    }
+
+    .intro-text {
+        position: absolute;
+        padding: 15px;
+        font-size: 1.3em;
+        line-height: 1.25em;
+        font-weight: 400;
+        top: 70px;
+
+        @include respond(tab-port) {
+            font-size: 1.8rem;
+            padding: 35px 25px 0px 25px;
+        }
+
+        @include respond(half-break) {
+            font-size: 2em;
+            padding: 35px 25px 0px 25px;
+            top: 25%;
+        }
+
+        @include respond(tab-lan) {
+            font-size: 2em;
+            padding: 35px 25px 0px 25px;
+            top: 25%;
+        }
+
+        @include respond(desktop) {
+            font-size: 2em;
+            padding: 50px 25px 0px 100px;
+            top: 25%;
+        }
+    }
+
+    .intro-text-two {
+        display: none;
+        color: rgb(87, 87, 87);
+        font-size: 0.8em;
+        margin-top: 30px;
+        line-height: 1.4em;
+        max-width: 45%;
+
+        @include respond(tab-port) {
+            display: block;
+            position: absolute;
+            font-size: 1.2rem;
+        }
+
+        @include respond(half-break) {
+            display: block;
+            position: absolute;
+        }
+
+        @include respond(tab-lan) {
+            display: block;
+            position: absolute;
+        }
+
+        @include respond(desktop) {
+            display: block;
+            position: absolute;
+            margin-top: 50px;
+        }
+    }
+
+    .intro-pic {
+        position: absolute;
+        max-width: 100%;
+        max-height: 60vh;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+
+        @include respond(tab-port) {
+            max-width: 100%;
+            max-height: 55vh;
+        }
+
+        @include respond(half-break) {
+            max-width: 100%;
+            max-height: 55vh;
+        }
+
+        @include respond(tab-lan) {
+            max-width: 100%;
+            max-height: 55vh;
+        }
+
+        @include respond(desktop) {
+            max-width: 100%;
+            max-height: 55vh;
+        }
+    }
+}

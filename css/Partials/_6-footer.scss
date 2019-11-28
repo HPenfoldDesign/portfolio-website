@@ -1,0 +1,21 @@
+.footer-bar {
+    height: 100px;
+    width: 100%;
+    background: #2d2d2d;
+    p {
+        font-family:'Montserrat', Arial, sans-serif;
+        color: #fff;
+        text-align: center;
+        font-size: 14px;
+    }
+    span {
+        font-weight: 600;
+    }
+    &:first-of-type { 
+        padding-top:10px;
+    }
+    &:last-of-type { 
+        padding-bottom:10px;
+    }
+}
+

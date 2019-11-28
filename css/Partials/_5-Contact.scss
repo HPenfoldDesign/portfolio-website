@@ -1,0 +1,121 @@
+.grey-bg {
+  background: rgb(212, 212, 212);
+  width: 100%;
+}
+
+.form-styling {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 1000px;
+  margin: 0 10px;
+  justify-items: center;
+  grid-gap: 10px;
+  @include respond(tab-port) {
+    grid-template-columns: 1fr 1fr;
+    margin: 0px 10px auto;
+  }
+  @include respond(half-break) {
+    grid-template-columns: 1fr 1fr;
+    margin: 0px 10px auto;
+  }  
+  @include respond(tab-lan) {
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+  }
+  @include respond(desktop) {
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+  }
+}
+
+.form-styling input {
+  display: grid;
+  width: 100%;
+  font-weight: 600;
+  border: 1px solid grey;
+  border-left: 0;
+  border-right: 0;
+  padding: 5px 0;
+  margin: 0 10px 0px;
+
+  &::placeholder {
+    padding-left: 10px;
+  }
+  &:first-of-type {
+    margin-top: 10px;
+  }
+  &:last-of-type {
+    background-color: rgba(5, 255, 0, 0.12);
+    color: #292929;
+    margin-bottom: 30px;
+    width: 100%;
+    padding: 5px 20px;
+    justify-items: center;
+    @include respond(tab-port) {
+      grid-column: 1 / span 2;
+      width: 100%;
+    }
+    
+    @include respond(half-break) {
+      grid-column: 1 / span 2;
+      width: 30%;
+    }
+    
+    @include respond(tab-lan) {
+      grid-column: 1 / span 2;
+      width: 30%;
+    }
+
+    @include respond(desktop) {
+      grid-column: 1 / span 2;
+      width: 30%;
+    }
+  }
+  @include respond(tab-port) {
+    &:nth-child(2) {
+      margin-top: 10px;
+    }
+  }
+  @include respond(half-break) {
+    &:nth-child(2) {
+      margin-top: 10px;
+    }
+  }
+  @include respond(tab-lan) {
+    &:nth-child(2) {
+      margin-top: 10px;
+    }
+  }
+  @include respond(desktop) {
+    &:nth-child(2) {
+      margin-top: 10px;
+    }
+  }
+}
+
+.form-styling textarea {
+  width: 100%;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  border-left: 0px;
+  border-right: 0px;
+  font-weight: 600;
+  height: 300px;
+  max-width: 100%;
+  margin: 0 10px 0px;
+  &::placeholder {
+    padding: 10px;
+  }
+  @include respond(tab-port) {
+    grid-column: 1 / span 2;
+  }
+  @include respond(half-break) {
+    grid-column: 1 / span 2;
+  }
+  @include respond(tab-lan) {
+    grid-column: 1 / span 2;
+  }
+  @include respond(desktop) {
+    grid-column: 1 / span 2;
+  }
+}

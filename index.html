@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo final.png" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap" rel="stylesheet">
+    <title>Harry Penfold Design</title>
+</head>
+
+<body>
+    <header class="header-section" id="home">
+        <div class="top-banner-and-nav">
+            <img class="header-logo" src="img/logo final.png" alt="logo">
+        </div>
+
+        <div class="ext-banner-menu">
+            <ul>
+                <li><a href="#home">Home<i class="fas fa-chevron-right"></i></a>
+                    <span><a href="https://www.linkedin.com/in/harrypenfolddesign/"><img src="img/LinkedIn_logo_initials.png"
+                                alt="linkedin logo"></span></a></li>
+
+                <li><a href="#portfolio">Portfolio<i class="fas fa-chevron-right"></i></a>
+                    <span><a href="https://www.behance.net/hpenfolddesign"><img src="img/logo-behance-png-7-927-650-85-96-2072.png" 
+                                alt="behance logo"></span></a><li>
+
+                <li><a href="#contact">Contact<i class="fas fa-chevron-right"></i></a></li>
+            </ul>
+        </div>
+
+        <!--hamburger menu animation-->
+        <div class="menu-wrap">
+            <input type="checkbox" class="toggler" onclick="turnOffBR()" />
+            <div class="hamburger">
+                <div></div>
+            </div>
+        </div>
+        <!-------------------------->
+
+        <div class="intro">
+            <img class="intro-pic" src="img/julian opie style portrait-color.png">
+            <div class="green-box"></div>
+            <p class="intro-text">Hi there, I'm Harry Penfold. A graphic designer and front-end developer living in the
+                fine city of Norwich, UK.
+                <span class="intro-text-two"> I love creating unique user experiances through the power of design and
+                    code.
+                    Im driven by positive results generated from the user / client journey.</p>
+            </span>
+        </div>
+    </header>
+
+    <section id="portfolio">
+        <div class="port-head">
+            <h2>portfolio</h2>
+        </div>
+
+        <div class="port-boxes">
+            <!--The links below currently link to behance, will create own pages in future.-->
+            <div class="port">
+                <a href="https://www.behance.net/gallery/82161107/Method-Consultancy-Branding-and-Website"
+                    target="_blank">
+                    <img class="port-thumbnail" src="img/method large.jpg">
+                    <div class="port-box-title">
+                        <h3>Method Consultancy</h3>
+                    </div>
+                </a>
+            </div>
+
+            <div class="port">
+                <a href="https://www.behance.net/gallery/82197009/PPE-Enterprises-2015-2018" target="_blank">
+                    <img class="port-thumbnail" src="img/ppe large.JPG">
+                    <div class="port-box-title">
+                        <a href="https://www.google.com/">
+                            <h3>PPE Enterprises</h3>
+                    </div>
+                </a>
+            </div>
+
+            <div class="port">
+                <a href="https://www.behance.net/gallery/84079391/Creating-my-own-brand" target="_blank">
+                    <img class="port-thumbnail" src="img/self branded.jpg">
+                    <div class="port-box-title">
+                        <a href="https://www.google.com/">
+                            <h3>Self-branding</h3>
+                    </div>
+                </a>
+            </div>
+
+            <div class="port">
+                <a href="https://www.behance.net/gallery/82917803/Website-Remake" target="_blank">
+                    <img class="port-thumbnail" src="img/netmatters build.jpg">
+                    <div class="port-box-title">
+                        <h3>Netmatters Build</h3>
+                    </div>
+                </a>
+            </div>
+
+            <div class="port">
+                <a href="https://www.behance.net/gallery/74042955/University-Workings-20" target="_blank">
+                    <img class="port-thumbnail" src="img/uni-days.jpg">
+                    <div class="port-box-title">
+                        <h3>Early work</h3>
+                    </div>
+                </a>
+            </div>
+
+            <div class="port">
+                <a href="https://www.behance.net/gallery/75340703/logo-design-Branding" target="_blank">
+                    <img class="port-thumbnail" src="img/logo design.jpg">
+                    <div class="port-box-title">
+                        <h3>Branding</h3>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </section>
+    <section id="contact">
+        <div class="port-head">
+            <h2>contact</h2>
+        </div>
+        <div class="grey-bg">
+            <div class="form">
+                <form class="form-styling" action="/action_page.php">
+                    <input type="text" name="name" placeholder="Name">
+                    <input type="email" name="email" placeholder="Email">
+                    <input type="text" name="company" placeholder="Company / Business">
+                    <input type="text" name="telephone" placeholder="Telephone">
+                    <textarea id="subject" name="subject" placeholder="Message"></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="footer-bar">
+            <p><span>e:</span> hpenfolddesign@gmail.com</p>
+            <p><span>p:</span> 07123 465789</p><br>
+            <p>Harry Penfold Design</p>
+            <p> &#9400; 2019, All rights reserved</p>
+        </div>
+    </section>
+
+    <!--SCRIPTS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/0b37a95b67.js" crossorigin="anonymous"></script>
+    <script src="/js/Hamburger-menu.js"></script>
+
+</body>
+
+</html>
